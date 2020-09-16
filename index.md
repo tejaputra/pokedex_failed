@@ -1,2 +1,2 @@
-nav:
-    - Home: register.html
+help me please
+register.html
