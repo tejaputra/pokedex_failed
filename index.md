@@ -1,1 +1,1 @@
-testing
+register.html
