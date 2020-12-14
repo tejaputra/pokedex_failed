@@ -6,6 +6,7 @@ const layouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const url = 'mongodb+srv://teja:teja1000@cluster0.xfbln.mongodb.net/itzpad?retryWrites=true&w=majority';
 mongoose.connect(url,{useNewUrlParser: true, useUnifiedTopology: true});
+const port = process.env.PORT || 3000
 
 const db = mongoose.connection;
 db.once('open', () => {
@@ -37,5 +38,6 @@ const indexRoutes = require('./routes/index_page');
 
 app.use('/',indexRoutes);
 
-app.listen(3000);
-console.log('server run at port 3000....');
+app.listen(port,() => {
+  console.log(`Server running at port `+port);
+});
