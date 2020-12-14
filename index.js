@@ -4,7 +4,7 @@ const session = require('express-session');
 const layouts = require('express-ejs-layouts');
 
 const mongoose = require('mongoose');
-const url = 'mongodb+srv://teja:teja1000@cluster0.xfbln.mongodb.net/itzpad?retryWrites=true&w=majority';
+const url = 'mongodb+srv://tejaputra:itzypad123@cluster0.xfbln.mongodb.net/itzpad?retryWrites=true&w=majority';
 mongoose.connect(url,{useNewUrlParser: true, useUnifiedTopology: true});
 const port = process.env.PORT || 3000
 
